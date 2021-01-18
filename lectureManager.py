@@ -211,6 +211,7 @@ def dlSession(session):
         "responseType": "json"
     }, True, "data")
 
+    print(f"downloading {nameNormalize(session['SessionName'])}")
     if withYTDL:
         useYTDL(session, deliveryInfo, destDir)
     else:
