@@ -1,1 +1,2 @@
 # lectureManager
+# lectureManager
