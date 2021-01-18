@@ -26,3 +26,5 @@ python lectureManager.py -t "[ASPXAUTHTOKEN]" -b "[https://baseurl.xyz]"
 * Sometimes when there are multiple streams, only one will be downloaded.
   * When using the download link, the streams get merged with one being scaled down in the corner of the video.
 * This is not the defualt behaviour, but can be enabled with `-y`
+
+Based on the original script by DavidBuchanan314: https://gist.github.com/DavidBuchanan314/26aa8bd765807798d917b983ac13213b
