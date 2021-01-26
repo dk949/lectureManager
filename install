@@ -1,0 +1,6 @@
+if ! [ -f ./run ]; then
+    echo "python $PWD/lectureManager.py \$@" > run
+    chmod +x run
+fi
+
+ln -s "$PWD"/run ~/.local/bin/lectureManager
