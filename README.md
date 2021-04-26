@@ -3,11 +3,11 @@
 * A program to download lectures from [Panopto](https://www.panopto.com/)
 
 ## How to use it?
-* When launching the script for the first time, pass your ASPXAUTH token and panapto pase URL
+* When launching the script for the first time, pass your ASPXAUTH token and panopto pase URL
   * Base URL can look like this "https://york.cloud.panopto.eu/"
   * The token can be obtained from the browser after logging into the website
     * In Firefox it is in the Debug options (F12) -> Storage -> Cookies
-```
+```shell
 python lectureManager.py -t "[ASPXAUTHTOKEN]" -b "[https://baseurl.xyz]"
 ```
 * These will get cached unless the `-n` option is provided
@@ -20,6 +20,21 @@ python lectureManager.py -t "[ASPXAUTHTOKEN]" -b "[https://baseurl.xyz]"
   * Where `FOLDERNAME` is the name of the folder provided by Panopto or its alias set in `settings.json`
   * This can be specified with `-o`
   
+  ## settings.json
+* Currently you can specify aliases and folders to download
+* syntax for these is as follows
+```json
+{
+    "aliases": {
+        "PANOPTO_DIR_NAME1": "ALIAS_DIR_NAME1",
+        "PANOPTO_DIR_NAME2": "ALIAS_DIR_NAME2"
+    },
+    "folders": [
+        "PANOPTO_DIR_NAME1",
+        "PANOPTO_DIR_NAME2"
+    ]
+}
+```
   
 ## youtube-dl
 * The script can use [youtube-dl](https://youtube-dl.org/) instead of the download link provided by Panopto
