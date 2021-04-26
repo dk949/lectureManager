@@ -3,7 +3,7 @@
 * A program to download lectures from [Panopto](https://www.panopto.com/)
 
 ## How to use it?
-* When launching the script for the first time, pass your ASPXAUTH token and panopto pase URL
+* When launching the script for the first time, pass your ASPXAUTH token and panopto base URL
   * Base URL can look like this "https://york.cloud.panopto.eu/"
   * The token can be obtained from the browser after logging into the website
     * In Firefox it is in the Debug options (F12) -> Storage -> Cookies
